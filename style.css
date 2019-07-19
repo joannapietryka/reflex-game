@@ -1,0 +1,35 @@
+body {
+    background: #90a1d670;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3b3e42;
+}
+#board, .header, .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2, .info {
+    padding: 0 10px;
+}
+
+.tile {
+    width: 50px;
+    height: 50px;
+    background: #5a6196;
+    margin: 20px 10px;   
+    pointer-events: none;
+}
+
+.tile.active {
+    pointer-events: auto;
+}
+
+.start, .reset {
+    width: 100px;
+    height: 60px;
+    border: 1px solid black;
+    line-height: 60px;
+    text-align: center;
+    margin: 30px;
+}
